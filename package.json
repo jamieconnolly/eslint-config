@@ -1,0 +1,26 @@
+{
+  "name": "@jamieconnolly/eslint-config",
+  "version": "0.0.1",
+  "description": "My own personal ESLint configuration",
+  "author": "Jamie Connolly <jamie@jamieconnolly.com>",
+  "homepage": "https://github.com/jamieconnolly/eslint-config",
+  "keywords": ["eslint", "eslintconfig"],
+  "repository": "jamieconnolly/eslint-config",
+  "bugs": "https://github.com/jamieconnolly/eslint-config/issues",
+  "contributors": "https://github.com/jamieconnolly/eslint-config/graphs/contributors",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "scripts": {
+    "lint": "eslint --format=compact .",
+    "test": "npm run lint"
+  },
+  "engine": {
+    "npm": ">=2.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.3.0"
+  },
+  "peerDependencies": {
+    "eslint": "^2.3.0"
+  }
+}

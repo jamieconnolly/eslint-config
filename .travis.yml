@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - stable
+
+notifications:
+  email:
+    on_failure: always
+    on_success: never
+
+cache:
+  directories:
+    - node_modules
+sudo: false
