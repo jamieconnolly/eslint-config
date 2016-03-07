@@ -1,0 +1,6 @@
+{
+  "extends": "./lib/index.js",
+  "env": {
+    "node": true
+  }
+}
