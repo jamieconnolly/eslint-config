@@ -2,15 +2,15 @@
 
 module.exports = {
   env: {
-    es6: true,
+    es6: true
   },
   parserOptions: {
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 6,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   rules: {
     // require braces in arrow function body
@@ -58,6 +58,6 @@ module.exports = {
     // enforce spacing around embedded expressions of template strings
     'template-curly-spacing': ['error', 'never'],
     // enforce spacing around the * in yield* expressions
-    'yield-star-spacing': ['error', {'before': true, 'after': true}],
-  },
+    'yield-star-spacing': ['error', {'before': true, 'after': true}]
+  }
 };
