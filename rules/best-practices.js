@@ -129,6 +129,6 @@ module.exports = {
     // require immediate function invocation to be wrapped in parentheses
     'wrap-iife': ['error', 'inside'],
     // require or disallow Yoda conditions
-    'yoda': ['error', 'never'],
-  },
+    'yoda': ['error', 'never']
+  }
 };
