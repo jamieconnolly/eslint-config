@@ -1,3 +1,6 @@
 {
-  "extends": "./legacy.js"
+  "extends": "./legacy.js",
+  "rules": {
+    "quote-props": "off"
+  }
 }

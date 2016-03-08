@@ -1,9 +1,8 @@
+import config from '../legacy';
 import eslint from 'eslint';
 import isObject from 'is-object';
 import path from 'path';
 import test from 'tape';
-
-import config from '../legacy';
 
 test('test basic properties of legacy config', (t) => {
   t.ok(isObject(config.extends), 'extends is an object');

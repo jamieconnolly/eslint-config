@@ -1,9 +1,8 @@
+import config from '../index';
 import eslint from 'eslint';
 import isObject from 'is-object';
 import path from 'path';
 import test from 'tape';
-
-import config from '../index';
 
 test('test basic properties of default config', (t) => {
   t.ok(isObject(config.extends), 'extends is an object');
