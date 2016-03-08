@@ -6,10 +6,7 @@ import test from 'tape';
 import config from '../legacy';
 
 test('test basic properties of legacy config', (t) => {
-  t.ok(isObject(config.ecmaFeatures), 'ecmaFeatures is an object');
-  t.ok(isObject(config.env), 'env is an object');
   t.ok(isObject(config.extends), 'extends is an object');
-  t.ok(isObject(config.globals), 'globals is an object');
   t.ok(isObject(config.rules), 'rules is an object');
   t.end();
 });

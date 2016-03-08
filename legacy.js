@@ -7,8 +7,8 @@ module.exports = {
     './rules/possible-errors',
     './rules/variables'
   ].map(require.resolve),
-  ecmaFeatures: {},
-  env: {},
-  globals: {},
-  rules: {}
+  rules: {
+    // disallow trailing commas in object literals
+    'comma-dangle': [2, 'never']
+  }
 };
