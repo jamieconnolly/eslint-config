@@ -63,7 +63,7 @@ module.exports = {
     // disallow usage of __iterator__ property
     'no-iterator': 'error',
     // disallow use of labeled statements
-    'no-labels': 'error',
+    'no-labels': ['error', {'allowLoop': false, 'allowSwitch': false}],
     // disallow unnecessary nested blocks
     'no-lone-blocks': 'error',
     // disallow creation of functions within loops
@@ -95,7 +95,7 @@ module.exports = {
     // disallow declaring the same variable more then once
     'no-redeclare': 'error',
     // disallow use of assignment in return statement
-    'no-return-assign': 'error',
+    'no-return-assign': ['error', 'except-parens'],
     // disallow use of `javascript:` urls.
     'no-script-url': 'error',
     // disallow assignments where both sides are exactly the same
@@ -119,16 +119,16 @@ module.exports = {
     // disallow use of void operator
     'no-void': 'error',
     // disallow usage of configurable warning terms in comments: e.g. todo
-    'no-warning-comments': 'error',
+    'no-warning-comments': ['error', {'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}],
     // disallow use of the with statement
     'no-with': 'error',
     // require use of the second argument for parseInt()
-    'radix': 'error',
+    'radix': ['error', 'always'],
     // requires to declare all vars on top of their containing scope
     'vars-on-top': 'error',
     // require immediate function invocation to be wrapped in parentheses
     'wrap-iife': ['error', 'inside'],
     // require or disallow Yoda conditions
-    'yoda': 'error',
+    'yoda': ['error', 'never'],
   },
 };
