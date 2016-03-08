@@ -1,7 +1,9 @@
 'use strict';
 
 module.exports = {
-  extends: [].map(require.resolve),
+  extends: [
+    './rules/best-practices',
+  ].map(require.resolve),
   ecmaFeatures: {},
   env: {},
   globals: {},
