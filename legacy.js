@@ -1,7 +1,9 @@
+'use strict';
+
 module.exports = {
-  extends: 'eslint:recommended',
+  extends: [].map(require.resolve),
   ecmaFeatures: {},
   env: {},
   globals: {},
-  rules: {}
+  rules: {},
 };

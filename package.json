@@ -9,10 +9,15 @@
   "bugs": "https://github.com/jamieconnolly/eslint-config/issues",
   "contributors": "https://github.com/jamieconnolly/eslint-config/graphs/contributors",
   "license": "MIT",
-  "main": "./lib/index.js",
+  "main": "index.js",
+  "files": [
+    "base.js",
+    "index.js",
+    "legacy.js"
+  ],
   "scripts": {
-    "lint": "eslint --format=compact .",
-    "test": "npm run lint"
+    "lint": "eslint .",
+    "test": "eslint --debug ."
   },
   "engine": {
     "npm": ">=2.7.0"

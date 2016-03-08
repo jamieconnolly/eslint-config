@@ -1,6 +1,3 @@
 {
-  "extends": "./lib/index.js",
-  "env": {
-    "node": true
-  }
+  "extends": "./legacy.js"
 }
