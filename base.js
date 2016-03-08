@@ -3,7 +3,7 @@
 module.exports = {
   extends: [
     './legacy',
-    './rules/es6'
+    './rules/ecmascript-6'
   ].map(require.resolve),
   rules: {}
 };
