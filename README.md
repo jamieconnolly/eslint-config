@@ -13,7 +13,7 @@ You can learn more about [Shareable Configs](http://eslint.org/docs/developer-gu
 
 ### Default
 
-The default ESLint configuration lints for ES6.
+The default ESLint configuration lints for ECMAScript 6+ and React.
 
 First, install this config package and ESLint:
 
