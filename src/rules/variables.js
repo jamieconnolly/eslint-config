@@ -1,30 +1,29 @@
-'use strict';
+// const OFF = 0;
+const ERROR = 2;
 
 module.exports = {
   rules: {
     // enforce or disallow variable initializations at definition
-    'init-declarations': ['error', 'always'],
+    'init-declarations': [ERROR, 'always'],
     // disallow the catch clause parameter name being the same as a variable in the outer scope
-    'no-catch-shadow': 'error',
+    'no-catch-shadow': ERROR,
     // disallow deletion of variables
-    'no-delete-var': 'error',
+    'no-delete-var': ERROR,
     // disallow labels that share a name with a variable
-    'no-label-var': 'error',
-    // restrict usage of specified global variables
-    'no-restricted-globals': 'off',
+    'no-label-var': ERROR,
     // disallow declaration of variables already declared in the outer scope
-    'no-shadow': 'error',
+    'no-shadow': ERROR,
     // disallow shadowing of names such as arguments
-    'no-shadow-restricted-names': 'error',
+    'no-shadow-restricted-names': ERROR,
     // disallow use of undeclared variables unless mentioned in a /*global */ block
-    'no-undef': 'error',
+    'no-undef': ERROR,
     // disallow use of undefined when initializing variables
-    'no-undef-init': 'error',
+    'no-undef-init': ERROR,
     // disallow use of undefined variable
-    'no-undefined': 'error',
+    'no-undefined': ERROR,
     // disallow declaration of variables that are not used in the code
-    'no-unused-vars': ['error', {'vars': 'all', 'args': 'after-used'}],
+    'no-unused-vars': [ERROR, {'vars': 'all', 'args': 'after-used'}],
     // disallow use of variables before they are defined
-    'no-use-before-define': ['error', 'nofunc']
-  }
+    'no-use-before-define': [ERROR, 'nofunc'],
+  },
 };

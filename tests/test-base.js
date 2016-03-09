@@ -1,4 +1,4 @@
-import config from '../base';
+import config from '../src/base';
 import eslint from 'eslint';
 import isObject from 'is-object';
 import path from 'path';
@@ -12,8 +12,8 @@ test('test basic properties of base config', (t) => {
 
 test('load base config in eslint to validate rule syntax is correct', (t) => {
   const cli = new eslint.CLIEngine({
-    configFile: path.join(__dirname, '..', 'base.js'),
-    useEslintrc: false
+    configFile: path.join(__dirname, '../src/base.js'),
+    useEslintrc: false,
   });
 
   t.ok(cli.executeOnText('var foo;\n'), 'can executeOnText');

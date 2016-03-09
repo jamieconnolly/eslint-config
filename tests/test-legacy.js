@@ -1,4 +1,4 @@
-import config from '../legacy';
+import config from '../src/legacy';
 import eslint from 'eslint';
 import isObject from 'is-object';
 import path from 'path';
@@ -12,8 +12,8 @@ test('test basic properties of legacy config', (t) => {
 
 test('load legacy config in eslint to validate rule syntax is correct', (t) => {
   const cli = new eslint.CLIEngine({
-    configFile: path.join(__dirname, '..', 'legacy.js'),
-    useEslintrc: false
+    configFile: path.join(__dirname, '../src/legacy.js'),
+    useEslintrc: false,
   });
 
   t.ok(cli.executeOnText('var foo;\n'), 'can executeOnText');

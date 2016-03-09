@@ -1,4 +1,4 @@
-import config from '../index';
+import config from '../src/index';
 import eslint from 'eslint';
 import isObject from 'is-object';
 import path from 'path';
@@ -12,8 +12,8 @@ test('test basic properties of default config', (t) => {
 
 test('load default config in eslint to validate rule syntax is correct', (t) => {
   const cli = new eslint.CLIEngine({
-    configFile: path.join(__dirname, '..', 'index.js'),
-    useEslintrc: false
+    configFile: path.join(__dirname, '../src/index.js'),
+    useEslintrc: false,
   });
 
   t.ok(cli.executeOnText('var foo;\n'), 'can executeOnText');

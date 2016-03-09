@@ -1,6 +1,7 @@
-'use strict';
-
 module.exports = {
+  env: {
+    browser: true,
+  },
   extends: [
     './rules/best-practices',
     './rules/ecmascript-6',
@@ -8,7 +9,7 @@ module.exports = {
     './rules/possible-errors',
     './rules/strict-mode',
     './rules/stylistic-issues',
-    './rules/variables'
+    './rules/variables',
   ].map(require.resolve),
-  rules: {}
+  rules: {},
 };
