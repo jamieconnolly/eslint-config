@@ -4,7 +4,7 @@ const ERROR = 2;
 module.exports = {
   rules: {
     // enforces getter/setter pairs in objects
-    'accessor-pairs': ERROR,
+    'accessor-pairs': [ERROR, {'setWithoutGet': true}],
     // enforces return statements in callbacks of array’s methods
     'array-callback-return': ERROR,
     // treat var statements as if they were block scoped
@@ -120,7 +120,7 @@ module.exports = {
     // disallow use of void operator
     'no-void': ERROR,
     // disallow usage of configurable warning terms in comments: e.g. todo
-    'no-warning-comments': [ERROR, {'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}],
+    'no-warning-comments': [WARNING, {'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}],
     // disallow use of the with statement
     'no-with': ERROR,
     // require use of the second argument for parseInt()
