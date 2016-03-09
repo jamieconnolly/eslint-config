@@ -1,62 +1,64 @@
-'use strict';
+const OFF = 0;
+const WARNING = 1;
+const ERROR = 2;
 
 module.exports = {
   rules: {
     // disallow trailing commas in object literals
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': [ERROR, 'always-multiline'],
     // disallow assignment in conditional expressions
-    'no-cond-assign': ['error', 'except-parens'],
+    'no-cond-assign': [ERROR, 'except-parens'],
     // disallow use of console
-    'no-console': 'warn',
+    'no-console': WARNING,
     // disallow use of constant expressions in conditions
-    'no-constant-condition': 'warn',
+    'no-constant-condition': WARNING,
     // disallow control characters in regular expressions
-    'no-control-regex': 'error',
+    'no-control-regex': ERROR,
     // disallow use of debugger
-    'no-debugger': 'error',
+    'no-debugger': ERROR,
     // disallow duplicate arguments in functions
-    'no-dupe-args': 'error',
+    'no-dupe-args': ERROR,
     // disallow duplicate keys when creating object literals
-    'no-dupe-keys': 'error',
+    'no-dupe-keys': ERROR,
     // disallow a duplicate case label
-    'no-duplicate-case': 'error',
+    'no-duplicate-case': ERROR,
     // disallow empty block statements
-    'no-empty': 'error',
+    'no-empty': ERROR,
     // disallow the use of empty character classes in regular expressions
-    'no-empty-character-class': 'error',
+    'no-empty-character-class': ERROR,
     // disallow assigning to the exception in a catch block
-    'no-ex-assign': 'error',
+    'no-ex-assign': ERROR,
     // disallow double-negation boolean casts in a boolean context
-    'no-extra-boolean-cast': 'error',
+    'no-extra-boolean-cast': ERROR,
     // disallow unnecessary parentheses
-    'no-extra-parens': ['error', 'functions'],
+    'no-extra-parens': [ERROR, 'functions'],
     // disallow unnecessary semicolons
-    'no-extra-semi': 'error',
+    'no-extra-semi': ERROR,
     // disallow overwriting functions written as function declarations
-    'no-func-assign': 'error',
+    'no-func-assign': ERROR,
     // disallow function or variable declarations in nested blocks
-    'no-inner-declarations': ['error', 'functions'],
+    'no-inner-declarations': [ERROR, 'functions'],
     // disallow invalid regular expression strings in the RegExp constructor
-    'no-invalid-regexp': 'error',
+    'no-invalid-regexp': ERROR,
     // disallow irregular whitespace outside of strings and comments
-    'no-irregular-whitespace': 'error',
+    'no-irregular-whitespace': ERROR,
     // disallow negation of the left operand of an in expression
-    'no-negated-in-lhs': 'error',
+    'no-negated-in-lhs': ERROR,
     // disallow the use of object properties of the global object (Math and JSON) as functions
-    'no-obj-calls': 'error',
+    'no-obj-calls': ERROR,
     // disallow multiple spaces in a regular expression literal
-    'no-regex-spaces': 'error',
+    'no-regex-spaces': ERROR,
     // disallow sparse arrays
-    'no-sparse-arrays': 'error',
+    'no-sparse-arrays': ERROR,
     // avoid code that looks like two expressions but is actually one
-    'no-unexpected-multiline': 'error',
+    'no-unexpected-multiline': ERROR,
     // disallow unreachable statements after a return, throw, continue, or break statement
-    'no-unreachable': 'error',
+    'no-unreachable': ERROR,
     // disallow comparisons with the value NaN
-    'use-isnan': 'error',
+    'use-isnan': ERROR,
     // ensure JSDoc comments are valid
-    'valid-jsdoc': 'off',
+    'valid-jsdoc': OFF,
     // ensure that the results of typeof are compared against a valid string
-    'valid-typeof': 'error'
-  }
+    'valid-typeof': ERROR,
+  },
 };
