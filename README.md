@@ -33,5 +33,5 @@ Then, add the following to your `.eslintrc` file:
 
 [build-status-image]: https://img.shields.io/travis/jamieconnolly/eslint-config/master.svg
 [travis-ci]: https://travis-ci.org/jamieconnolly/eslint-config
-[license-image]: https://img.shields.io/npm/l/@jamieconnolly/eslint-config.svg
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 [license]: https://github.com/jamieconnolly/eslint-config/blob/master/LICENSE
