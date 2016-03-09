@@ -120,7 +120,7 @@ module.exports = {
     // enforce spacing before and after semicolons
     'semi-spacing': [ERROR, {'before': false, 'after': true}],
     // sort import declarations within module
-    'sort-imports': ERROR,
+    'sort-imports': OFF,
     // sort variables within the same declaration block
     'sort-vars': ERROR,
     // require or disallow a space before blocks
