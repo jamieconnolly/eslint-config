@@ -1,4 +1,4 @@
-const ERROR = 2;
+const ERROR = 'error';
 
 module.exports = {
   env: {
@@ -31,6 +31,8 @@ module.exports = {
     'no-const-assign': ERROR,
     // disallow duplicate name in class members
     'no-dupe-class-members': ERROR,
+    // disallow duplicate module imports
+    'no-duplicate-imports': ERROR,
     // disallow use of the new operator with the Symbol object
     'no-new-symbol': ERROR,
     // disallow use of this/super before calling super() in constructors

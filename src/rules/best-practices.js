@@ -1,5 +1,5 @@
-const WARNING = 1;
-const ERROR = 2;
+const WARNING = 'warn';
+const ERROR = 'error';
 
 module.exports = {
   rules: {
@@ -117,6 +117,8 @@ module.exports = {
     'no-useless-call': ERROR,
     // disallow unnecessary concatenation of literals or template literals
     'no-useless-concat': ERROR,
+    // disallow unnecessary usage of escape character
+    'no-useless-escape': ERROR,
     // disallow use of void operator
     'no-void': ERROR,
     // disallow usage of configurable warning terms in comments: e.g. todo
