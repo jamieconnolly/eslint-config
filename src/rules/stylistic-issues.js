@@ -1,5 +1,5 @@
-const OFF = 0;
-const ERROR = 2;
+const OFF = 'off';
+const ERROR = 'error';
 
 module.exports = {
   rules: {
@@ -53,12 +53,16 @@ module.exports = {
     'max-params': [ERROR, 3],
     // specify the maximum number of statement allowed in a function
     'max-statements': [ERROR, 10],
+    // specify the maximum number of statements allowed per line
+    'max-statements-per-line': [ERROR, {'max': 1}],
     // require a capital letter for constructors
     'new-cap': [ERROR, {'newIsCap': true, 'capIsNew': true}],
     // disallow the omission of parentheses when invoking a constructor with no arguments
     'new-parens': ERROR,
     // require or disallow an empty newline after variable declarations
     'newline-after-var': ERROR,
+    // require newline before return statement
+    'newline-before-return': ERROR,
     // enforce newline after each call when chaining the calls
     'newline-per-chained-call': [ERROR, {'ignoreChainWithDepth': 3}],
     // disallow use of the Array constructor

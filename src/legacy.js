@@ -1,4 +1,4 @@
-const ERROR = 2;
+const ERROR = 'error';
 
 module.exports = {
   env: {

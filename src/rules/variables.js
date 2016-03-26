@@ -1,5 +1,5 @@
-// const OFF = 0;
-const ERROR = 2;
+const OFF = 'off';
+const ERROR = 'error';
 
 module.exports = {
   rules: {
@@ -11,6 +11,8 @@ module.exports = {
     'no-delete-var': ERROR,
     // disallow labels that share a name with a variable
     'no-label-var': ERROR,
+    // restrict usage of specified global variables
+    'no-restricted-globals': OFF,
     // disallow declaration of variables already declared in the outer scope
     'no-shadow': ERROR,
     // disallow shadowing of names such as arguments

@@ -1,6 +1,6 @@
-const OFF = 0;
-const WARNING = 1;
-const ERROR = 2;
+const OFF = 'off';
+const WARNING = 'warn';
+const ERROR = 'error';
 
 module.exports = {
   rules: {
