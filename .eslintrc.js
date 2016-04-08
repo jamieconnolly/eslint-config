@@ -1,4 +1,4 @@
-const OFF = 0;
+const OFF = 'off';
 
 module.exports = {
   parser: 'babel-eslint',
