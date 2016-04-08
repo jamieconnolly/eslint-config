@@ -77,6 +77,8 @@ module.exports = {
     'react/react-in-jsx-scope': ERROR,
     // restrict file extensions that may be required
     'react/require-extension': [ERROR, {'extensions': ['.js']}],
+    // enforce return value in render function
+    'react/require-render-return': ERROR,
     // prevent extra closing tags for components without children
     'react/self-closing-comp': ERROR,
     // enforce component methods order
