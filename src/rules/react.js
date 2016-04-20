@@ -19,6 +19,8 @@ module.exports = {
     'react/jsx-curly-spacing': [ERROR, 'never', {'allowMultiline': true}],
     // enforce or disallow spaces around equal signs in JSX attributes
     'react/jsx-equals-spacing': [ERROR, 'never'],
+    // enforce position of the first prop in JSX
+    'react/jsx-first-prop-new-line': [ERROR, 'multiline'],
     // enforce event handler naming conventions in JSX
     'react/jsx-handler-names': ERROR,
     // validate props indentation in JSX
