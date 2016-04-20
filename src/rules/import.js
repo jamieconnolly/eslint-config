@@ -1,0 +1,38 @@
+const OFF = 'off';
+const ERROR = 'error';
+
+module.exports = {
+  plugins: [
+    'import',
+  ],
+  rules: {
+    // disable original `eslint` rule, enabled by `eslint-plugin-import`
+    'no-duplicate-imports': OFF,
+    // ensure a default export is present, given a default import
+    'import/default': ERROR,
+    // disallow any invalid exports, i.e. re-export of the same name
+    'import/export': ERROR,
+    // ensure all imports appear before other statements
+    'import/imports-first': [ERROR, 'absolute-first'],
+    // ensure named imports correspond to a named export in the remote file
+    'import/named': ERROR,
+    // ensure imported namespaces contain dereferenced properties as they are dereferenced
+    'import/namespace': OFF,
+    // disallow AMD require and define calls
+    'import/no-amd': ERROR,
+    // disallow CommonJS require calls and module.exports or exports.*
+    'import/no-commonjs': ERROR,
+    // disallow imported names marked with @deprecated documentation tag
+    'import/no-deprecated': ERROR,
+    // disallow repeated import of the same module in multiple places
+    'import/no-duplicates': ERROR,
+    // disallow use of exported name as identifier of default export
+    'import/no-named-as-default': ERROR,
+    // disallow use of exported name as property of default export
+    'import/no-named-as-default-member': ERROR,
+    // disallow namespace imports
+    'import/no-namespace': ERROR,
+    // ensure imports point to a file/module that can be resolved
+    'import/no-unresolved': ERROR,
+  },
+};
