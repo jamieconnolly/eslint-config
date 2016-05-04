@@ -37,6 +37,8 @@ module.exports = {
     'no-new-symbol': ERROR,
     // disallow use of this/super before calling super() in constructors
     'no-this-before-super': ERROR,
+    // disallow unnecessary computed property keys in object literals
+    'no-useless-computed-key': ERROR,
     // disallow unnecessary constructor
     'no-useless-constructor': ERROR,
     // require let or const instead of var
