@@ -12,6 +12,8 @@ module.exports = {
     'import/default': ERROR,
     // disallow any invalid exports, i.e. re-export of the same name
     'import/export': ERROR,
+    // ensure consistent use of file extension within the import path
+    'import/extensions': [ERROR, 'never'],
     // ensure all imports appear before other statements
     'import/imports-first': [ERROR, 'absolute-first'],
     // ensure named imports correspond to a named export in the remote file
@@ -26,13 +28,21 @@ module.exports = {
     'import/no-deprecated': ERROR,
     // disallow repeated import of the same module in multiple places
     'import/no-duplicates': ERROR,
+    // disallow the use of extraneous packages
+    'import/no-extraneous-dependencies': [ERROR, {'devDependencies': false}],
     // disallow use of exported name as identifier of default export
     'import/no-named-as-default': ERROR,
     // disallow use of exported name as property of default export
     'import/no-named-as-default-member': ERROR,
     // disallow namespace imports
     'import/no-namespace': ERROR,
+    // disallow the use of Node.js builtin modules
+    'import/no-nodejs-modules': OFF,
     // ensure imports point to a file/module that can be resolved
     'import/no-unresolved': ERROR,
+    // enforce a convention in the order of `require()`/`import` statements
+    'import/order': [ERROR, {
+      'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+    }],
   },
 };
