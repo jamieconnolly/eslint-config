@@ -24,9 +24,8 @@
     "prepublish": "npm run build",
     "pretest": "npm run lint"
   },
-  "engine": {
-    "node": "4.x || 5.x",
-    "npm": ">=2.7 || 3.x"
+  "engines": {
+    "node": ">=0.10"
   },
   "devDependencies": {
     "babel-cli": "^6.6",
