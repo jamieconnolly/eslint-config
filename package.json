@@ -34,7 +34,7 @@
     "babel-tape-runner": "^2.0",
     "eslint": "^2.9",
     "eslint-find-rules": "^1.4",
-    "eslint-plugin-import": "^1.6",
+    "eslint-plugin-import": "^1.7",
     "eslint-plugin-jsx-a11y": "^1.0",
     "eslint-plugin-react": "^5.0",
     "is-object": "^1.0",
@@ -43,7 +43,7 @@
   },
   "peerDependencies": {
     "eslint": "^2.9",
-    "eslint-plugin-import": "^1.6",
+    "eslint-plugin-import": "^1.7",
     "eslint-plugin-jsx-a11y": "^1.0",
     "eslint-plugin-react": "^5.0"
   },

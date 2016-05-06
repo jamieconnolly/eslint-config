@@ -20,6 +20,8 @@ module.exports = {
     'import/named': ERROR,
     // ensure imported namespaces contain dereferenced properties as they are dereferenced
     'import/namespace': OFF,
+    // enforce a newline after import statements
+    'import/newline-after-import': ERROR,
     // disallow AMD require and define calls
     'import/no-amd': ERROR,
     // disallow CommonJS require calls and module.exports or exports.*
@@ -29,7 +31,9 @@ module.exports = {
     // disallow repeated import of the same module in multiple places
     'import/no-duplicates': ERROR,
     // disallow the use of extraneous packages
-    'import/no-extraneous-dependencies': [ERROR, {'devDependencies': false}],
+    'import/no-extraneous-dependencies': [ERROR, {'devDependencies': false, 'optionalDependencies': false}],
+    // disallow the use of mutable exports with `var` or `let`
+    'import/no-mutable-exports': ERROR,
     // disallow use of exported name as identifier of default export
     'import/no-named-as-default': ERROR,
     // disallow use of exported name as property of default export
@@ -40,7 +44,7 @@ module.exports = {
     'import/no-nodejs-modules': OFF,
     // ensure imports point to a file/module that can be resolved
     'import/no-unresolved': ERROR,
-    // enforce a convention in the order of `require()`/`import` statements
+    // enforce a convention in module import order
     'import/order': [ERROR, {
       'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
     }],
