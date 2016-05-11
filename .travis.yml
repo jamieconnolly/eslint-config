@@ -12,12 +12,6 @@ deploy:
     repo: jamieconnolly/eslint-config
     tags: true
 
-notifications:
-  email:
-    on_failure: always
-    on_success: never
-
 cache:
   directories:
     - node_modules
-sudo: false
