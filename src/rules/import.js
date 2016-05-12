@@ -48,5 +48,7 @@ module.exports = {
     'import/order': [ERROR, {
       'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
     }],
+    // enfore a default export if module exports a single name
+    'import/prefer-default-export': ERROR,
   },
 };
