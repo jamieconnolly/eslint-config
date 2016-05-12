@@ -37,6 +37,8 @@ module.exports = {
     'react/jsx-no-duplicate-props': ERROR,
     // prevent usage of unwrapped JSX strings
     'react/jsx-no-literals': OFF,
+    // prevent usage of unsafe target='_blank'
+    'react/jsx-no-target-blank': ERROR,
     // disallow undeclared variables in JSX
     'react/jsx-no-undef': ERROR,
     // enforce PascalCase for user-defined JSX components
