@@ -1,6 +1,6 @@
+const ERROR = 'error';
 const OFF = 'off';
 const WARNING = 'warn';
-const ERROR = 'error';
 
 module.exports = {
   plugins: [
@@ -8,25 +8,27 @@ module.exports = {
   ],
   rules: {
     // prevent missing displayName in a React component definition
-    'react/display-name': [ERROR, {'ignoreTranspilerName': false}],
+    'react/display-name': ERROR,
     // forbid certain propTypes
-    'react/forbid-prop-types': [ERROR, {'forbid': ['any', 'array', 'object']}],
+    'react/forbid-prop-types': ERROR,
     // enforce boolean attributes notation in JSX
-    'react/jsx-boolean-value': [ERROR, 'never'],
+    'react/jsx-boolean-value': ERROR,
     // validate closing bracket location in JSX
-    'react/jsx-closing-bracket-location': [ERROR, 'tag-aligned'],
+    'react/jsx-closing-bracket-location': ERROR,
     // enforce or disallow spaces inside of curly braces in JSX attributes
-    'react/jsx-curly-spacing': [ERROR, 'never', {'allowMultiline': true}],
+    'react/jsx-curly-spacing': ERROR,
     // enforce or disallow spaces around equal signs in JSX attributes
-    'react/jsx-equals-spacing': [ERROR, 'never'],
+    'react/jsx-equals-spacing': ERROR,
+    // restrict file extensions that may contain JSX
+    'react/filename-extension': ERROR,
     // enforce position of the first prop in JSX
     'react/jsx-first-prop-new-line': [ERROR, 'multiline'],
     // enforce event handler naming conventions in JSX
     'react/jsx-handler-names': ERROR,
-    // validate props indentation in JSX
-    'react/jsx-indent-props': [ERROR, 2],
     // validate JSX indentation
     'react/jsx-indent': [ERROR, 2],
+    // validate props indentation in JSX
+    'react/jsx-indent-props': [ERROR, 2],
     // validate JSX has key prop when in array or iterator
     'react/jsx-key': ERROR,
     // limit maximum of props on a single line in JSX
@@ -46,7 +48,7 @@ module.exports = {
     // enforce props alphabetical sorting
     'react/jsx-sort-props': [ERROR, {'ignoreCase': false, 'callbacksLast': true, 'shorthandFirst': true}],
     // validate spacing before closing bracket in JSX
-    'react/jsx-space-before-closing': [ERROR, 'always'],
+    'react/jsx-space-before-closing': ERROR,
     // prevent React to be incorrectly marked as unused
     'react/jsx-uses-react': ERROR,
     // prevent variables used in JSX to be incorrectly marked as unused
@@ -65,6 +67,8 @@ module.exports = {
     'react/no-is-mounted': ERROR,
     // prevent multiple component definition per file
     'react/no-multi-comp': [ERROR, {'ignoreStateless': true}],
+    // prevent usage of the return value of React.render
+    'react/no-render-return-value': ERROR,
     // prevent usage of setState
     'react/no-set-state': ERROR,
     // prevent using string references in ref attribute
@@ -72,7 +76,7 @@ module.exports = {
     // prevent usage of unknown DOM property
     'react/no-unknown-property': ERROR,
     // enforce ES5 or ES6 class for React Components
-    'react/prefer-es6-class': [ERROR, 'always'],
+    'react/prefer-es6-class': ERROR,
     // enforce stateless React Components to be written as a pure function
     'react/prefer-stateless-function': ERROR,
     // prevent missing props validation in a React component definition
@@ -80,15 +84,17 @@ module.exports = {
     // prevent missing React when using JSX
     'react/react-in-jsx-scope': ERROR,
     // restrict file extensions that may be required
-    'react/require-extension': [ERROR, {'extensions': ['.js']}],
-    // enforce return value in render function
+    'react/require-extension': ERROR,
+    // enforce React components to have a shouldComponentUpdate method
+    'react/require-optimization': ERROR,
+    // enforce ES5 or ES6 class for returning value in render function
     'react/require-render-return': ERROR,
     // prevent extra closing tags for components without children
     'react/self-closing-comp': ERROR,
     // enforce component methods order
     'react/sort-comp': ERROR,
     // enforce propTypes declarations alphabetical sorting
-    'react/sort-prop-types': [ERROR, {'ignoreCase': false, 'callbacksLast': true}],
+    'react/sort-prop-types': [ERROR, {'callbacksLast': true}],
     // prevent missing parentheses around multilines JSX
     'react/wrap-multilines': [ERROR, {'declaration': false, 'assignment': false}],
   },

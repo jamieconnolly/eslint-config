@@ -1,10 +1,10 @@
-const WARNING = 'warn';
 const ERROR = 'error';
+const WARNING = 'warn';
 
 module.exports = {
   rules: {
     // enforces getter/setter pairs in objects
-    'accessor-pairs': [ERROR, {'setWithoutGet': true}],
+    'accessor-pairs': ERROR,
     // enforces return statements in callbacks of array’s methods
     'array-callback-return': ERROR,
     // treat var statements as if they were block scoped
@@ -20,13 +20,13 @@ module.exports = {
     // enforces consistent newlines before or after dots
     'dot-location': [ERROR, 'property'],
     // encourages use of dot notation whenever possible
-    'dot-notation': [ERROR, {'allowKeywords': true}],
+    'dot-notation': ERROR,
     // require the use of === and !==
-    'eqeqeq': [ERROR, 'allow-null'],
+    'eqeqeq': [ERROR, 'smart'],
     // make sure for-in loops have an if statement
     'guard-for-in': ERROR,
     // disallow the use of alert, confirm, and prompt
-    'no-alert': WARNING,
+    'no-alert': ERROR,
     // disallow use of arguments.caller or arguments.callee
     'no-caller': ERROR,
     // disallow lexical declarations in case clauses
@@ -64,7 +64,7 @@ module.exports = {
     // disallow usage of __iterator__ property
     'no-iterator': ERROR,
     // disallow use of labeled statements
-    'no-labels': [ERROR, {'allowLoop': false, 'allowSwitch': false}],
+    'no-labels': ERROR,
     // disallow unnecessary nested blocks
     'no-lone-blocks': ERROR,
     // disallow creation of functions within loops
@@ -96,7 +96,7 @@ module.exports = {
     // disallow declaring the same variable more then once
     'no-redeclare': ERROR,
     // disallow use of assignment in return statement
-    'no-return-assign': [ERROR, 'except-parens'],
+    'no-return-assign': ERROR,
     // disallow use of `javascript:` urls.
     'no-script-url': ERROR,
     // disallow assignments where both sides are exactly the same
@@ -122,16 +122,16 @@ module.exports = {
     // disallow use of void operator
     'no-void': ERROR,
     // disallow usage of configurable warning terms in comments: e.g. todo
-    'no-warning-comments': [WARNING, {'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}],
+    'no-warning-comments': WARNING,
     // disallow use of the with statement
     'no-with': ERROR,
     // require use of the second argument for parseInt()
-    'radix': [ERROR, 'always'],
+    'radix': ERROR,
     // requires to declare all vars on top of their containing scope
     'vars-on-top': ERROR,
     // require immediate function invocation to be wrapped in parentheses
     'wrap-iife': [ERROR, 'inside'],
     // require or disallow Yoda conditions
-    'yoda': [ERROR, 'never'],
+    'yoda': ERROR,
   },
 };

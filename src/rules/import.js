@@ -6,14 +6,12 @@ module.exports = {
     'import',
   ],
   rules: {
-    // disable original `eslint` rule, enabled by `eslint-plugin-import`
-    'no-duplicate-imports': OFF,
     // ensure a default export is present, given a default import
     'import/default': ERROR,
     // disallow any invalid exports, i.e. re-export of the same name
     'import/export': ERROR,
     // ensure consistent use of file extension within the import path
-    'import/extensions': [ERROR, 'never'],
+    'import/extensions': ERROR,
     // ensure all imports appear before other statements
     'import/imports-first': [ERROR, 'absolute-first'],
     // ensure named imports correspond to a named export in the remote file
@@ -45,9 +43,7 @@ module.exports = {
     // ensure imports point to a file/module that can be resolved
     'import/no-unresolved': ERROR,
     // enforce a convention in module import order
-    'import/order': [ERROR, {
-      'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-    }],
+    'import/order': ERROR,
     // enfore a default export if module exports a single name
     'import/prefer-default-export': ERROR,
   },

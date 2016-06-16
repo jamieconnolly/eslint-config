@@ -1,5 +1,5 @@
-const OFF = 'off';
 const ERROR = 'error';
+const OFF = 'off';
 
 module.exports = {
   env: {
@@ -7,7 +7,7 @@ module.exports = {
   },
   rules: {
     // enforce return after a callback
-    'callback-return': [ERROR, ['callback', 'cb', 'next']],
+    'callback-return': ERROR,
     // disallow require() outside of the top-level module scope
     'global-require': ERROR,
     // enforces error handling in callbacks (node environment)
