@@ -1,4 +1,5 @@
 const ERROR = 'error';
+const OFF = 'off';
 
 module.exports = {
   env: {
@@ -14,15 +15,15 @@ module.exports = {
   },
   rules: {
     // require braces in arrow function body
-    'arrow-body-style': [ERROR, 'as-needed'],
+    'arrow-body-style': ERROR,
     // require parens in arrow function arguments
-    'arrow-parens': [ERROR, 'always'],
+    'arrow-parens': ERROR,
     // require space before/after arrow function's arrow
-    'arrow-spacing': [ERROR, {'before': true, 'after': true}],
+    'arrow-spacing': ERROR,
     // verify calls of super() in constructors
     'constructor-super': ERROR,
     // enforce spacing around the * in generator functions
-    'generator-star-spacing': [ERROR, {'before': true, 'after': true}],
+    'generator-star-spacing': ERROR,
     // disallow modifying variables of class declarations
     'no-class-assign': ERROR,
     // disallow arrow functions where they could be confused with comparisons
@@ -32,7 +33,7 @@ module.exports = {
     // disallow duplicate name in class members
     'no-dupe-class-members': ERROR,
     // disallow duplicate module imports
-    'no-duplicate-imports': ERROR,
+    'no-duplicate-imports': OFF,
     // disallow use of the new operator with the Symbol object
     'no-new-symbol': ERROR,
     // disallow use of this/super before calling super() in constructors
@@ -41,10 +42,12 @@ module.exports = {
     'no-useless-computed-key': ERROR,
     // disallow unnecessary constructor
     'no-useless-constructor': ERROR,
+    // disallow renaming import, export, and destructured assignments to the same name
+    'no-useless-rename': ERROR,
     // require let or const instead of var
     'no-var': ERROR,
     // require method and property shorthand syntax for object literals
-    'object-shorthand': [ERROR, 'always'],
+    'object-shorthand': ERROR,
     // suggest using arrow functions as callbacks
     'prefer-arrow-callback': ERROR,
     // suggest using const declaration for variables that are never modified after declared
@@ -59,9 +62,13 @@ module.exports = {
     'prefer-template': ERROR,
     // disallow generator functions that do not have yield
     'require-yield': ERROR,
+    // enforce spacing between rest and spread operators and their expressions
+    'rest-spread-spacing': ERROR,
+    // enforce sorted import declarations within modules
+    'sort-imports': OFF,
     // enforce spacing around embedded expressions of template strings
-    'template-curly-spacing': [ERROR, 'never'],
+    'template-curly-spacing': ERROR,
     // enforce spacing around the * in yield* expressions
-    'yield-star-spacing': [ERROR, {'before': true, 'after': true}],
+    'yield-star-spacing': ERROR,
   },
 };

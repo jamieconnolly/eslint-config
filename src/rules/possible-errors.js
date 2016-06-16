@@ -1,17 +1,16 @@
-const OFF = 'off';
-const WARNING = 'warn';
 const ERROR = 'error';
+const OFF = 'off';
 
 module.exports = {
   rules: {
     // disallow trailing commas in object literals
     'comma-dangle': [ERROR, 'always-multiline'],
     // disallow assignment in conditional expressions
-    'no-cond-assign': [ERROR, 'except-parens'],
+    'no-cond-assign': ERROR,
     // disallow use of console
-    'no-console': WARNING,
+    'no-console': ERROR,
     // disallow use of constant expressions in conditions
-    'no-constant-condition': WARNING,
+    'no-constant-condition': ERROR,
     // disallow control characters in regular expressions
     'no-control-regex': ERROR,
     // disallow use of debugger
@@ -37,7 +36,7 @@ module.exports = {
     // disallow overwriting functions written as function declarations
     'no-func-assign': ERROR,
     // disallow function or variable declarations in nested blocks
-    'no-inner-declarations': [ERROR, 'functions'],
+    'no-inner-declarations': ERROR,
     // disallow invalid regular expression strings in the RegExp constructor
     'no-invalid-regexp': ERROR,
     // disallow irregular whitespace outside of strings and comments
@@ -46,6 +45,8 @@ module.exports = {
     'no-negated-in-lhs': ERROR,
     // disallow the use of object properties of the global object (Math and JSON) as functions
     'no-obj-calls': ERROR,
+    // disallow use of Object.prototypes builtins directly
+    'no-prototype-builtins': ERROR,
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': ERROR,
     // disallow sparse arrays
