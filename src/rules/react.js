@@ -20,7 +20,7 @@ module.exports = {
     // enforce or disallow spaces around equal signs in JSX attributes
     'react/jsx-equals-spacing': ERROR,
     // restrict file extensions that may contain JSX
-    'react/filename-extension': ERROR,
+    'react/jsx-filename-extension': ERROR,
     // enforce position of the first prop in JSX
     'react/jsx-first-prop-new-line': [ERROR, 'multiline'],
     // enforce event handler naming conventions in JSX
@@ -53,6 +53,8 @@ module.exports = {
     'react/jsx-uses-react': ERROR,
     // prevent variables used in JSX to be incorrectly marked as unused
     'react/jsx-uses-vars': ERROR,
+    // prevent comments from being inserted as text nodes
+    'react/no-comment-textnodes': ERROR,
     // prevent usage of dangerous JSX properties
     'react/no-danger': ERROR,
     // prevent usage of deprecated methods
