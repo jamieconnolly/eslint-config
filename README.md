@@ -1,37 +1,34 @@
-# ESLint Configuration
+# eslint-config
 
-[![build-status-image]][travis-ci]
-[![license-image]][license]
+[![Build Status][build-status-image]][build-status-url]
+[![MIT License][license-image]][license-url]
 
-This package provides my own personal `.eslintrc` as an extensible shared config.
+> My own opinionated ESLint configuration.
 
-Shareable configs are designed to work with the `extends` feature of `.eslintrc` files.
+## Installation
 
-You can learn more about [Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) on the official ESLint website.
+```
+$ npm install --save-dev @jamieconnolly/eslint-config
+```
 
 ## Usage
 
-### Default
-
-The default ESLint configuration lints for ECMAScript 6+ and React.
-
-First, install this config package and ESLint:
-
-```bash
-$ npm install --save-dev eslint @jamieconnolly/eslint-config
-```
-
-Then, add the following to your `.eslintrc` file:
+To get started, add this to your `.eslintrc.*` file:
 
 ```json
 {
-    "extends": "@jamieconnolly"
+  "extends": "@jamieconnolly"
 }
 ```
 
 *Note: We can omit the `/eslint-config` suffix since it is automatically assumed by ESLint.*
 
-[build-status-image]: https://img.shields.io/travis/jamieconnolly/eslint-config/master.svg
-[travis-ci]: https://travis-ci.org/jamieconnolly/eslint-config
+## License
+
+[MIT License][license-url]
+
+[build-status-image]: https://api.travis-ci.org/jamieconnolly/eslint-config.svg?branch=master
+[build-status-url]: https://travis-ci.org/jamieconnolly/eslint-config
+
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
-[license]: https://github.com/jamieconnolly/eslint-config/blob/master/LICENSE
+[license-url]: https://github.com/jamieconnolly/eslint-config/blob/master/LICENSE
