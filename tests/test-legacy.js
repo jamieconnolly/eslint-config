@@ -1,14 +1,14 @@
 'use strict';
 
-var config = require('../lib/legacy');
-var eslint = require('eslint');
-var isObject = require('is-object');
-var path = require('path');
-var test = require('tape');
+var config = require('../lib/legacy'),
+    eslint = require('eslint'),
+    isObject = require('is-object'),
+    path = require('path'),
+    test = require('tape');
 
 test('test basic properties of legacy config', function(t) {
+  t.ok(isObject(config.env), 'env is an object');
   t.ok(isObject(config.extends), 'extends is an object');
-  t.ok(isObject(config.rules), 'rules is an object');
   t.end();
 });
 
