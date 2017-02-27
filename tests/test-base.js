@@ -1,10 +1,10 @@
 'use strict';
 
-var config = require('../lib/base'),
-    eslint = require('eslint'),
-    isObject = require('is-object'),
-    path = require('path'),
-    test = require('tape');
+var config = require('../lib/base');
+var eslint = require('eslint');
+var isObject = require('is-object');
+var path = require('path');
+var test = require('tape');
 
 test('test basic properties of base config', function(t) {
   t.ok(isObject(config.extends), 'extends is an object');
