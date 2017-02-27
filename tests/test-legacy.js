@@ -7,7 +7,6 @@ var config = require('../lib/legacy'),
     test = require('tape');
 
 test('test basic properties of legacy config', function(t) {
-  t.ok(isObject(config.env), 'env is an object');
   t.ok(isObject(config.extends), 'extends is an object');
   t.end();
 });
