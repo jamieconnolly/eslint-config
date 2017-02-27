@@ -1,18 +1,20 @@
-import config from '../src/index';
-import eslint from 'eslint';
-import isObject from 'is-object';
-import path from 'path';
-import test from 'tape';
+'use strict';
 
-test('test basic properties of default config', (t) => {
+var config = require('../lib/index'),
+    eslint = require('eslint'),
+    isObject = require('is-object'),
+    path = require('path'),
+    test = require('tape');
+
+test('test basic properties of default config', function(t) {
   t.ok(isObject(config.extends), 'extends is an object');
   t.ok(isObject(config.rules), 'rules is an object');
   t.end();
 });
 
-test('load default config in eslint to validate rule syntax is correct', (t) => {
-  const cli = new eslint.CLIEngine({
-    configFile: path.join(__dirname, '../src/index.js'),
+test('load default config in eslint to validate rule syntax is correct', function(t) {
+  var cli = new eslint.CLIEngine({
+    configFile: path.join(__dirname, '../lib/index.js'),
     useEslintrc: false,
   });
 

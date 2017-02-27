@@ -1,9 +1,12 @@
-const OFF = 'off';
+'use strict';
+
+var ERROR = 'error';
+var OFF = 'off';
 
 module.exports = {
-  parser: 'babel-eslint',
-  extends: require.resolve('./src/base'),
+  extends: require.resolve('./lib/legacy'),
   rules: {
+    'comma-dangle': [ERROR, 'always-multiline'],
     'max-len': OFF,
     'no-magic-numbers': OFF,
     'object-curly-newline': OFF,
