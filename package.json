@@ -25,10 +25,12 @@
     "unused-rules": "eslint-find-rules --unused lib/index.js",
     "pretest": "npm run lint"
   },
+  "dependencies": {
+    "eslint-plugin-import": "^2.2"
+  },
   "devDependencies": {
     "eslint": "^3.16",
     "eslint-find-rules": "^1.4",
-    "eslint-plugin-import": "^1.8",
     "eslint-plugin-jsx-a11y": "^1.5",
     "eslint-plugin-react": "^5.2",
     "is-object": "^1.0",
@@ -37,7 +39,6 @@
   },
   "peerDependencies": {
     "eslint": ">=3.16",
-    "eslint-plugin-import": "^1.8",
     "eslint-plugin-jsx-a11y": "^1.5",
     "eslint-plugin-react": "^5.2"
   },
