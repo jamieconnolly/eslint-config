@@ -1,3 +1,14 @@
 {
-  "extends": "./lib/legacy.js"
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  }
 }
