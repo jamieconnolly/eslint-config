@@ -8,6 +8,8 @@ var test = require('tape');
 
 test('test basic properties of default config', function(t) {
   t.ok(isObject(config.extends), 'extends is an object');
+  t.ok(isObject(config.parser), 'extends is an object');
+  t.ok(isObject(config.parserOptions), 'extends is an object');
   t.end();
 });
 
