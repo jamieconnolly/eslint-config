@@ -1,6 +1,9 @@
 language: node_js
+
 node_js:
-  - stable
+  - node
+
+cache: yarn
 
 deploy:
   provider: npm
@@ -11,7 +14,3 @@ deploy:
     branch: master
     repo: jamieconnolly/eslint-config
     tags: true
-
-cache:
-  directories:
-    - node_modules
