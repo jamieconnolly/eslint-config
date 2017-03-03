@@ -33,9 +33,9 @@ module.exports = {
     'promise/param-names': 'error',
 
     // prefer async/await to the callback pattern
-    'promise/prefer-await-to-callbacks': 'off',
+    'promise/prefer-await-to-callbacks': 'warn',
 
     // prefer await to then() for reading Promise values
-    'promise/prefer-await-to-then': 'off',
+    'promise/prefer-await-to-then': 'warn',
   },
 };
