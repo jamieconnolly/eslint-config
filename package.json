@@ -2,29 +2,23 @@
   "name": "@jamieconnolly/eslint-config",
   "version": "0.9.0",
   "description": "My own opinionated ESLint configuration",
-  "keywords": [
-    "eslint",
-    "eslintconfig"
-  ],
-  "homepage": "https://github.com/jamieconnolly/eslint-config",
-  "bugs": "https://github.com/jamieconnolly/eslint-config/issues",
-  "license": "MIT",
-  "author": {
-    "name": "Jamie Connolly",
-    "url": "https://github.com/jamieconnolly"
-  },
-  "contributors": "https://github.com/jamieconnolly/eslint-config/graphs/contributors",
-  "files": [
-    "lib/"
-  ],
   "main": "lib/index.js",
-  "repository": "jamieconnolly/eslint-config",
   "scripts": {
     "lint": "eslint .",
+    "pretest": "npm run lint",
     "test": "jest",
-    "unused-rules": "eslint-find-rules --unused lib/index.js",
-    "pretest": "npm run lint"
+    "unused-rules": "eslint-find-rules --unused lib/index.js"
   },
+  "repository": "https://github.com/jamieconnolly/eslint-config",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "eslintconfig"
+  ],
+  "author": "Jamie Connolly (https://github.com/jamieconnolly)",
+  "license": "MIT",
+  "bugs": "https://github.com/jamieconnolly/eslint-config/issues",
+  "homepage": "https://github.com/jamieconnolly/eslint-config#readme",
   "dependencies": {
     "babel-eslint": "^7.1",
     "eslint-plugin-babel": "^4.1",
