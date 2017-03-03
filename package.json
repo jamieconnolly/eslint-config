@@ -2,12 +2,12 @@
   "name": "@jamieconnolly/eslint-config",
   "version": "0.9.0",
   "description": "My own opinionated ESLint configuration",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "pretest": "yarn run lint",
-    "rules:omitted": "eslint-index lib/index.js --status=omitted --docs",
-    "rules:status": "eslint-index lib/index.js --format=table",
+    "rules:omitted": "eslint-index index.js --status=omitted --docs",
+    "rules:status": "eslint-index index.js --format=table",
     "test": "jest"
   },
   "repository": "https://github.com/jamieconnolly/eslint-config",
