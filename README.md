@@ -2,6 +2,7 @@
 
 [![Build Status][build-status-image]][build-status-url]
 [![MIT License][license-image]][license-url]
+[![Version][version-image]][version-url]
 
 > My own opinionated ESLint configuration.
 
@@ -32,3 +33,6 @@ To get started, add this to your `.eslintrc.*` file:
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: https://github.com/jamieconnolly/eslint-config/blob/master/LICENSE
+
+[version-image]: https://img.shields.io/npm/v/@jamieconnolly/eslint-config.svg
+[version-url]: https://www.npmjs.com/package/@jamieconnolly/eslint-config
