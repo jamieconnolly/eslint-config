@@ -1,9 +1,13 @@
 {
   "root": true,
   "env": {
+    "jest": true,
     "node": true
   },
   "extends": "eslint:recommended",
+  "plugins": [
+    "jest"
+  ],
   "rules": {
     "comma-dangle": ["error", "always-multiline"],
     "indent": ["error", 2],
