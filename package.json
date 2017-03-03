@@ -5,9 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "jest",
-    "unused-rules": "eslint-find-rules --unused lib/index.js"
+    "pretest": "yarn run lint",
+    "rules:omitted": "eslint-index lib/index.js --status=omitted --docs",
+    "rules:status": "eslint-index lib/index.js --format=table",
+    "test": "jest"
   },
   "repository": "https://github.com/jamieconnolly/eslint-config",
   "keywords": [
@@ -27,7 +28,7 @@
   },
   "devDependencies": {
     "eslint": "^3.16",
-    "eslint-find-rules": "^1.14",
+    "eslint-index": "^1.2",
     "eslint-plugin-jest": "^19.0",
     "jest": "^19.0"
   },
