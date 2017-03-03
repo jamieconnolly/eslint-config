@@ -151,6 +151,10 @@ module.exports = {
     }, {
       message: 'Please use Object.defineProperty instead.',
       property: '__defineSetter__',
+    }, {
+      message: 'Please use the object spread operator (...) instead.',
+      object: 'Object',
+      property: 'assign',
     }],
 
     // disallow assignment operators in return statements
