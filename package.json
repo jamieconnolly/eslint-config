@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "eslint": "^3.16",
-    "eslint-find-rules": "^1.4",
+    "eslint-find-rules": "^1.14",
     "eslint-plugin-jest": "^19.0",
     "jest": "^19.0"
   },
