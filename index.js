@@ -8,7 +8,6 @@ module.exports = {
     './rules/import',
     './rules/node',
     './rules/possible-errors',
-    './rules/prefer-object-spread',
     './rules/promise',
     './rules/strict-mode',
     './rules/stylistic-issues',
