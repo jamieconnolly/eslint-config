@@ -7,10 +7,9 @@ cache: yarn
 
 deploy:
   provider: npm
-  email: jamie@jamieconnolly.com
-  api_key:
-    secure: OSBoCPEsY2/K+REn2NAdwphUe8wW9vc8F3CrlcN0vbUqyp341tC3U0BQP1rGl3xQqSDsRPbhqwaXISd9yDJuM1rcCPUL/xsjZ5VdATdjNrNIGxD3BXon8csNHLgtuFE0XKv2k4Fk148qtRmP65dXvObkJuTJaQvXXtC3b+cMInktoC3Yi5plNe25dD3a76BqyWkGt5ocMv3QWZ+p/M1kwKFE7MskhitOaWBNCXP6nZJxmncabI8tlBmxyiMC0KT3IOK18ybUBKlCna+LQPFKv/nY8f62uq8rd4gU6/PDbDEvzPU8ZIbIUYpqye4zFLHZfMtsEWpDzS7ENpsCkEDUJbO3JkKQAiEW0mWrQiiUoQM/0D8ukf8y42u913GnwMixxPeqhw8ikErFrRL7S+KvCf0uPxF3W86tTo3T7TA6Ce03FPKi0dg5s8KbDqXg5emPCqJqKs1FA3bGw79/HzGWOJNW41WPt+WSbpZEHOBT9sIXUEe4d+zXo8oXo1k5DoDq/iuT2rkJuhUTMdYmTvrOPd1Bh+78XPbJvyhzN2z2KnRNrKGzw6bGXQGjXUdVKfxhkW7zWxa444NzFYbyCNCl1BB+cNFIgW1N5vMDD1IbJ5c4MgEW6jrI5yG7yD9aSYjMg9xuz75gI9qQZ77VcjpABmr8gUgCbnfzdfJd66+8VmA=
+  email: ${NPM_EMAIL}
+  api_key: ${NPM_TOKEN}
   on:
     branch: master
-    repo: jamieconnolly/eslint-config
+    repo: ${TRAVIS_REPO_SLUG}
     tags: true
