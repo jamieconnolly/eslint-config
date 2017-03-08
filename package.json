@@ -27,13 +27,13 @@
     "eslint-plugin-promise": "^3.5"
   },
   "devDependencies": {
-    "eslint": "^3.16",
+    "eslint": "^3.17",
     "eslint-index": "^1.2",
     "eslint-plugin-jest": "^19.0",
     "jest": "^19.0"
   },
   "peerDependencies": {
-    "eslint": ">=3.16"
+    "eslint": ">=3.17"
   },
   "engines": {
     "node": ">=4"
