@@ -2,8 +2,14 @@
 
 module.exports = {
   rules: {
+    // enforce linebreaks after opening and before closing array brackets
+    'array-bracket-newline': 'error',
+
     // enforce consistent spacing inside array brackets
     'array-bracket-spacing': 'error',
+
+    // enforce line breaks after each array element
+    'array-element-newline': ['error', {multiline: true}],
 
     // enforce consistent spacing inside single-line blocks
     'block-spacing': 'error',
@@ -77,9 +83,6 @@ module.exports = {
     // require empty lines around comments
     'lines-around-comment': 'error',
 
-    // require or disallow newlines around directives
-    'lines-around-directive': 'error',
-
     // enforce a maximum depth that blocks can be nested
     'max-depth': 'error',
 
@@ -109,12 +112,6 @@ module.exports = {
 
     // require parentheses when invoking a constructor with no arguments
     'new-parens': 'error',
-
-    // require or disallow an empty line after variable declarations
-    'newline-after-var': 'error',
-
-    // require an empty line before return statements
-    'newline-before-return': 'error',
 
     // require a newline after each call in a method chain
     'newline-per-chained-call': 'error',
@@ -206,6 +203,29 @@ module.exports = {
     // require or disallow padding within blocks
     'padded-blocks': ['error', 'never'],
 
+    // require or disallow padding lines between statements
+    'padding-line-between-statements': ['error', {
+      blankLine: 'always',
+      next: 'return',
+      prev: '*',
+    }, {
+      blankLine: 'always',
+      next: '*',
+      prev: ['const', 'let', 'var'],
+    }, {
+      blankLine: 'any',
+      next: ['const', 'let', 'var'],
+      prev: ['const', 'let', 'var'],
+    }, {
+      blankLine: 'always',
+      next: '*',
+      prev: 'directive',
+    }, {
+      blankLine: 'any',
+      next: 'directive',
+      prev: 'directive',
+    }],
+
     // require quotes around object literal property names
     'quote-props': ['error', 'consistent-as-needed'],
 
@@ -220,6 +240,9 @@ module.exports = {
 
     // enforce consistent spacing before and after semicolons
     'semi-spacing': 'error',
+
+    // enforce location of semicolons
+    'semi-style': 'error',
 
     // require object keys to be sorted
     'sort-keys': 'error',
@@ -252,6 +275,9 @@ module.exports = {
 
     // enforce consistent spacing after the // or /* in a comment
     'spaced-comment': 'error',
+
+    // enforce spacing around colons of switch statements
+    'switch-colon-spacing': 'error',
 
     // require or disallow spacing between template tags and their literals
     'template-tag-spacing': 'error',
