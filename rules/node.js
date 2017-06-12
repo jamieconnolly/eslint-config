@@ -14,6 +14,9 @@ module.exports = {
     // require error handling in callbacks
     'handle-callback-err': 'error',
 
+    // disallow use of the Buffer() constructor
+    'no-buffer-constructor': 'off',
+
     // disallow require calls to be mixed with regular variable declarations
     'no-mixed-requires': 'error',
 
