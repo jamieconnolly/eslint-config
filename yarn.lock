@@ -704,7 +704,7 @@ eslint-import-resolver-node@^0.2.0:
     object-assign "^4.0.1"
     resolve "^1.1.6"
 
-eslint-index@1.3.0:
+eslint-index@1.x:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/eslint-index/-/eslint-index-1.3.0.tgz#4c28b973deaf79c6931be542eea2f6c54cb2c807"
   dependencies:
@@ -740,7 +740,7 @@ eslint-plugin-import@2.6.0:
     minimatch "^3.0.3"
     read-pkg-up "^2.0.0"
 
-eslint-plugin-jest@20.0.3:
+eslint-plugin-jest@20.x:
   version "20.0.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jest/-/eslint-plugin-jest-20.0.3.tgz#ec15eba6ac0ab44a67ebf6e02672ca9d7e7cba29"
 
@@ -755,7 +755,7 @@ eslint-scope@^3.7.1:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint@4.0.0:
+eslint@4.x:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.0.0.tgz#7277c01437fdf41dccd168d5aa0e49b75ca1f260"
   dependencies:
@@ -1665,7 +1665,7 @@ jest-validate@^20.0.3:
     leven "^2.1.0"
     pretty-format "^20.0.3"
 
-jest@20.0.4:
+jest@20.x:
   version "20.0.4"
   resolved "https://registry.yarnpkg.com/jest/-/jest-20.0.4.tgz#3dd260c2989d6dad678b1e9cc4d91944f6d602ac"
   dependencies:
