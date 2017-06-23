@@ -1,6 +1,7 @@
 # eslint-config
 
-[![Build Status][build-status-image]][build-status-url]
+[![Build status][build-status-image]][build-status-url]
+[![Dependency status][dependency-status-image]][dependency-status-url]
 [![MIT License][license-image]][license-url]
 [![Version][version-image]][version-url]
 
@@ -30,6 +31,9 @@ To get started, add this to your `.eslintrc.*` file:
 
 [build-status-image]: https://api.travis-ci.org/jamieconnolly/eslint-config.svg?branch=master
 [build-status-url]: https://travis-ci.org/jamieconnolly/eslint-config
+
+[dependency-status-image]: https://david-dm.org/jamieconnolly/eslint-config/master.svg
+[dependency-status-url]: https://david-dm.org/jamieconnolly/eslint-config
 
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg
 [license-url]: https://github.com/jamieconnolly/eslint-config/blob/master/LICENSE
