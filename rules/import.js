@@ -35,6 +35,9 @@ module.exports = {
     // report AMD require and define calls
     'import/no-amd': 'error',
 
+    // forbid anonymous values as default exports
+    'import/no-anonymous-default-export': ['error', {allowArray: true}],
+
     // report CommonJS require calls and module.exports or exports.*
     'import/no-commonjs': 'error',
 
