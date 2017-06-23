@@ -7,7 +7,7 @@ it('load config in eslint to validate rule syntax', function() {
   var data = new eslint.CLIEngine({
     configFile: path.join(__dirname, '../index.js'),
     useEslintrc: false,
-  }).executeOnText("export default 'foo';\n", 'valid.js');
+  }).executeOnText('export default [];\n', 'valid.js');
 
   expect(data).toBeTruthy();
   expect(data.errorCount).toBe(0);
