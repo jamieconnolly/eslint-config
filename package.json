@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "pretest": "yarn run lint",
+    "pretest": "npm run lint",
     "rules:omitted": "eslint-index index.js --status=omitted --docs",
     "rules:status": "eslint-index index.js --format=table",
     "test": "jest"
@@ -27,13 +27,13 @@
     "eslint-plugin-promise": "3.5.0"
   },
   "devDependencies": {
-    "eslint": "4.x",
-    "eslint-index": "1.x",
-    "eslint-plugin-jest": "20.x",
-    "jest": "20.x"
+    "eslint": "4.1",
+    "eslint-index": "1.3",
+    "eslint-plugin-jest": "20.0",
+    "jest": "20.0"
   },
   "peerDependencies": {
-    "eslint": ">=4.0"
+    "eslint": ">=4.1"
   },
   "engines": {
     "node": ">=4"
