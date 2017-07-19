@@ -3,13 +3,13 @@
 module.exports = {
   rules: {
     // enforce linebreaks after opening and before closing array brackets
-    'array-bracket-newline': 'error',
+    'array-bracket-newline': ['error', {minItems: 3, multiline: true}],
 
     // enforce consistent spacing inside array brackets
     'array-bracket-spacing': 'error',
 
     // enforce line breaks after each array element
-    'array-element-newline': ['error', {multiline: true}],
+    'array-element-newline': ['error', {minItems: 3, multiline: true}],
 
     // enforce consistent spacing inside single-line blocks
     'block-spacing': 'error',
