@@ -14,11 +14,4 @@ module.exports = {
     './rules/variables',
   ].map(require.resolve),
   parser: 'babel-eslint',
-  parserOptions: {
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-    },
-    ecmaVersion: 2017,
-    sourceType: 'module',
-  },
 };
