@@ -1,11 +1,10 @@
 'use strict';
 
 var eslint = require('eslint');
-var path = require('path');
 
 it('load config in eslint to validate rule syntax', function() {
   var data = new eslint.CLIEngine({
-    configFile: path.join(__dirname, '../index.js'),
+    configFile: 'index.js',
     useEslintrc: false,
   }).executeOnText('export default [];\n', 'valid.js');
 
