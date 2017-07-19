@@ -2,7 +2,7 @@
 
 var isPlainObj = require('is-plain-obj');
 
-it('load config in eslint to validate rule syntax', function() {
+it('test basic properties of config', function() {
   var config = require('../index.js');
 
   expect(isPlainObj(config)).toBe(true);
