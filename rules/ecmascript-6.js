@@ -4,6 +4,13 @@ module.exports = {
   env: {
     es6: true,
   },
+  parserOptions: {
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+    },
+    ecmaVersion: 2017,
+    sourceType: 'module',
+  },
   rules: {
     // require braces around arrow function bodies
     'arrow-body-style': 'error',
