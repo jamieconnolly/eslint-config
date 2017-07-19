@@ -4,7 +4,6 @@ module.exports = {
   extends: [
     './rules/babel',
     './rules/best-practices',
-    './rules/compat',
     './rules/ecmascript-6',
     './rules/import',
     './rules/node',
