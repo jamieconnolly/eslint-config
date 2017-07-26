@@ -15,7 +15,7 @@ $ npm install --save-dev @jamieconnolly/eslint-config
 
 ## Usage
 
-To get started, add this to your `.eslintrc.*` file:
+To get started, add this to your `.eslintrc.json` file:
 
 ```json
 {
