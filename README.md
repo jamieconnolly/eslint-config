@@ -15,12 +15,12 @@ $ npm install --save-dev @jamieconnolly/eslint-config
 
 ## Usage
 
-To get started, add this to your `.eslintrc.json` file:
+To get started, add this to your `.eslintrc.js` file:
 
-```json
-{
-  "extends": "@jamieconnolly"
-}
+```js
+module.exports = {
+  extends: '@jamieconnolly'
+};
 ```
 
 *Note: We can omit the `/eslint-config` suffix since it is automatically assumed by ESLint.*
