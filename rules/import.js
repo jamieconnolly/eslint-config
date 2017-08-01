@@ -36,7 +36,14 @@ module.exports = {
     'import/no-amd': 'error',
 
     // forbid anonymous values as default exports
-    'import/no-anonymous-default-export': ['error', {allowArray: true}],
+    'import/no-anonymous-default-export': ['error', {
+      allowAnonymousClass: false,
+      allowAnonymousFunction: false,
+      allowArray: true,
+      allowArrowFunction: true,
+      allowLiteral: true,
+      allowObject: true,
+    }],
 
     // report CommonJS require calls and module.exports or exports.*
     'import/no-commonjs': 'error',
