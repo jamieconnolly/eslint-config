@@ -58,7 +58,16 @@ module.exports = {
     'import/no-dynamic-require': 'error',
 
     // forbid the use of extraneous packages
-    'import/no-extraneous-dependencies': 'error',
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: [
+        '**/__tests__/**',
+        '**/*.{spec,test}.{js,jsx}',
+        '{spec,test,tests}/**',
+        'test.{js,jsx}',
+        'test-*.{js,jsx}',
+      ],
+      optionalDependencies: false,
+    }],
 
     // prevent importing the submodules of other modules
     'import/no-internal-modules': 'off',
