@@ -104,8 +104,11 @@ module.exports = {
 
     // enforce a convention in module import order
     'import/order': ['error', {
-      'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-      'newlines-between': 'never',
+      'groups': [
+        ['builtin', 'external'],
+        ['internal', 'parent', 'sibling', 'index'],
+      ],
+      'newlines-between': 'always',
     }],
 
     // prefer a default export if module exports a single name
