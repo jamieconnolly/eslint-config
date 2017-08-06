@@ -64,7 +64,7 @@ module.exports = {
     'no-var': 'error',
 
     // require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': 'error',
+    'object-shorthand': ['error', 'always', {avoidQuotes: true}],
 
     // require arrow functions as callbacks
     'prefer-arrow-callback': ['error', {allowNamedFunctions: true}],
