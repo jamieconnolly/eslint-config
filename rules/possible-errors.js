@@ -21,7 +21,7 @@ module.exports = {
     'no-console': 'warn',
 
     // disallow constant expressions in conditions
-    'no-constant-condition': 'error',
+    'no-constant-condition': 'warn',
 
     // disallow control characters in regular expressions
     'no-control-regex': 'error',
