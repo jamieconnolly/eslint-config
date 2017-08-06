@@ -209,7 +209,7 @@ module.exports = {
     'no-with': 'error',
 
     // require using Error objects as Promise rejection reasons
-    'prefer-promise-reject-errors': 'error',
+    'prefer-promise-reject-errors': ['error', {allowEmptyReject: true}],
 
     // enforce the consistent use of the radix argument when using parseInt()
     'radix': 'error',
