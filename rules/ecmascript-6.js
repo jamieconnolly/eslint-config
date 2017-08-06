@@ -73,7 +73,18 @@ module.exports = {
     'prefer-const': 'error',
 
     // require destructuring from arrays and/or objects
-    'prefer-destructuring': 'error',
+    'prefer-destructuring': ['error', {
+      AssignmentExpression: {
+        array: true,
+        object: true,
+      },
+      VariableDeclarator: {
+        array: false,
+        object: true,
+      },
+    }, {
+      enforceForRenamedProperties: false,
+    }],
 
     // disallow parseInt() in favor of binary, octal, and hexadecimal literals
     'prefer-numeric-literals': 'error',
