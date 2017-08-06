@@ -6,7 +6,7 @@ module.exports = {
     'for-direction': 'error',
 
     // enforce return statements in getters
-    'getter-return': 'error',
+    'getter-return': ['error', {allowImplicit: true}],
 
     // disallow await inside of loops
     'no-await-in-loop': 'error',
