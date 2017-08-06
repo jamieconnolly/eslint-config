@@ -158,7 +158,7 @@ module.exports = {
     }],
 
     // disallow assignment operators in return statements
-    'no-return-assign': 'error',
+    'no-return-assign': ['error', 'always'],
 
     // disallow assignment operators in return statements
     'no-return-await': 'error',
