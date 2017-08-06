@@ -102,6 +102,6 @@ module.exports = {
     'valid-jsdoc': 'off',
 
     // enforce comparing typeof expressions against valid strings
-    'valid-typeof': 'error',
+    'valid-typeof': ['error', {requireStringLiterals: true}],
   },
 };
