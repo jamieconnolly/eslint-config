@@ -15,7 +15,7 @@ module.exports = {
     'no-compare-neg-zero': 'error',
 
     // disallow assignment operators in conditional expressions
-    'no-cond-assign': 'error',
+    'no-cond-assign': ['error', 'always'],
 
     // disallow the use of console
     'no-console': 'warn',
