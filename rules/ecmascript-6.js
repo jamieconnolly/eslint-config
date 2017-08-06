@@ -25,7 +25,7 @@ module.exports = {
     'constructor-super': 'error',
 
     // enforce consistent spacing around * operators in generator functions
-    'generator-star-spacing': 'error',
+    'generator-star-spacing': ['error', 'after'],
 
     // disallow reassigning class members
     'no-class-assign': 'error',
@@ -103,6 +103,6 @@ module.exports = {
     'template-curly-spacing': 'error',
 
     // require or disallow spacing around the * in yield* expressions
-    'yield-star-spacing': 'error',
+    'yield-star-spacing': ['error', 'after'],
   },
 };
