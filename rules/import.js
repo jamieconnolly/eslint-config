@@ -60,11 +60,11 @@ module.exports = {
     // forbid the use of extraneous packages
     'import/no-extraneous-dependencies': ['error', {
       devDependencies: [
-        '**/__tests__/**',
+        '**/__tests__/**/*.{js,jsx}',
+        '**/*.{conf,config}{.*,}.js',
         '**/*.{spec,test}.{js,jsx}',
-        '{spec,test,tests}/**',
+        'test/**/*.{js,jsx}',
         'test.{js,jsx}',
-        'test-*.{js,jsx}',
       ],
       optionalDependencies: false,
     }],
