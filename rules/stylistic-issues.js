@@ -189,7 +189,7 @@ module.exports = {
     'object-property-newline': ['error', {allowMultiplePropertiesPerLine: true}],
 
     // enforce variables to be declared either together or separately in functions
-    'one-var': 'error',
+    'one-var': ['error', 'never'],
 
     // require or disallow newlines around variable declarations
     'one-var-declaration-per-line': 'error',
