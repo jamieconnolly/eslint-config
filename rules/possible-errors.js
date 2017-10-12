@@ -6,7 +6,7 @@ module.exports = {
     'for-direction': 'error',
 
     // enforce return statements in getters
-    'getter-return': ['error', {allowImplicit: true}],
+    'getter-return': ['error', { allowImplicit: true }],
 
     // disallow await inside of loops
     'no-await-in-loop': 'error',
@@ -102,6 +102,6 @@ module.exports = {
     'valid-jsdoc': 'off',
 
     // enforce comparing typeof expressions against valid strings
-    'valid-typeof': ['error', {requireStringLiterals: true}],
+    'valid-typeof': ['error', { requireStringLiterals: true }],
   },
 };
