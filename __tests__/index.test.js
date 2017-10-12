@@ -3,7 +3,7 @@
 const eslint = require('eslint');
 const isPlainObj = require('is-plain-obj');
 
-it('should export an object', function() {
+it('should export an object', () => {
   const config = require('../index');
 
   expect(isPlainObj(config)).toBe(true);
@@ -11,7 +11,7 @@ it('should export an object', function() {
   expect(config.parser).toBeTruthy();
 });
 
-it('should not contain invalid rules', function() {
+it('should not contain invalid rules', () => {
   const cli = new eslint.CLIEngine({
     configFile: 'index.js',
     useEslintrc: false,

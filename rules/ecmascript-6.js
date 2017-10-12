@@ -31,7 +31,7 @@ module.exports = {
     'no-class-assign': 'error',
 
     // disallow arrow functions where they could be confused with comparisons
-    'no-confusing-arrow': ['error', {allowParens: true}],
+    'no-confusing-arrow': ['error', { allowParens: true }],
 
     // disallow reassigning const variables
     'no-const-assign': 'error',
@@ -64,10 +64,10 @@ module.exports = {
     'no-var': 'error',
 
     // require or disallow method and property shorthand syntax for object literals
-    'object-shorthand': ['error', 'always', {avoidQuotes: true}],
+    'object-shorthand': ['error', 'always', { avoidQuotes: true }],
 
     // require arrow functions as callbacks
-    'prefer-arrow-callback': ['error', {allowNamedFunctions: true}],
+    'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
 
     // require const declarations for variables that are never reassigned after declared
     'prefer-const': 'error',

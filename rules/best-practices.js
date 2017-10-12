@@ -54,7 +54,7 @@ module.exports = {
     'no-else-return': 'error',
 
     // disallow empty functions
-    'no-empty-function': ['error', {allow: ['arrowFunctions', 'functions', 'methods']}],
+    'no-empty-function': ['error', { allow: ['arrowFunctions', 'functions', 'methods'] }],
 
     // disallow empty destructuring patterns
     'no-empty-pattern': 'error',
@@ -209,7 +209,7 @@ module.exports = {
     'no-with': 'error',
 
     // require using Error objects as Promise rejection reasons
-    'prefer-promise-reject-errors': ['error', {allowEmptyReject: true}],
+    'prefer-promise-reject-errors': ['error', { allowEmptyReject: true }],
 
     // enforce the consistent use of the radix argument when using parseInt()
     'radix': 'error',

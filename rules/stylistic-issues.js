@@ -3,13 +3,13 @@
 module.exports = {
   rules: {
     // enforce linebreaks after opening and before closing array brackets
-    'array-bracket-newline': ['error', {minItems: 3, multiline: true}],
+    'array-bracket-newline': ['error', { minItems: 3, multiline: true }],
 
     // enforce consistent spacing inside array brackets
     'array-bracket-spacing': 'error',
 
     // enforce line breaks after each array element
-    'array-element-newline': ['error', {minItems: 3, multiline: true}],
+    'array-element-newline': ['error', { minItems: 3, multiline: true }],
 
     // enforce consistent spacing inside single-line blocks
     'block-spacing': 'error',
@@ -57,13 +57,17 @@ module.exports = {
     'id-blacklist': 'off',
 
     // enforce minimum and maximum identifier lengths
-    'id-length': ['error', {exceptions: ['x', 'y', 'i', 'j', 't', '_', '$']}],
+    'id-length': ['error', { exceptions: ['x', 'y', 'i', 'j', 't', '_', '$'] }],
 
     // require identifiers to match a specified regular expression
     'id-match': 'off',
 
     // enforce consistent indentation
-    'indent': ['error', 2, {MemberExpression: 1, SwitchCase: 1, VariableDeclarator: {const: 3, let: 2, var: 2}}],
+    'indent': ['error', 2, {
+      MemberExpression: 1,
+      SwitchCase: 1,
+      VariableDeclarator: { const: 3, let: 2, var: 2 },
+    }],
 
     // enforce the consistent use of either double or single quotes in JSX attributes
     'jsx-quotes': 'error',
@@ -87,10 +91,10 @@ module.exports = {
     'max-depth': 'error',
 
     // enforce a maximum line length
-    'max-len': ['error', 119, 2, {ignoreComments: false, ignoreUrls: true}],
+    'max-len': ['error', 119, 2, { ignoreComments: false, ignoreUrls: true }],
 
     // enforce a maximum number of lines per file
-    'max-lines': ['error', {skipBlankLines: true, skipComments: true}],
+    'max-lines': ['error', { skipBlankLines: true, skipComments: true }],
 
     // enforce a maximum depth that callbacks can be nested
     'max-nested-callbacks': ['error', 3],
@@ -141,7 +145,7 @@ module.exports = {
     'no-multi-assign': 'error',
 
     // disallow multiple empty lines
-    'no-multiple-empty-lines': ['error', {max: 2, maxEOF: 1}],
+    'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
 
     // disallow negated conditions
     'no-negated-condition': 'error',
@@ -183,10 +187,10 @@ module.exports = {
     'object-curly-newline': 'off',
 
     // enforce consistent spacing inside braces
-    'object-curly-spacing': 'off',
+    'object-curly-spacing': ['error', 'always', { arraysInObjects: true, objectsInObjects: false }],
 
     // enforce placing object properties on separate lines
-    'object-property-newline': ['error', {allowMultiplePropertiesPerLine: true}],
+    'object-property-newline': ['error', { allowMultiplePropertiesPerLine: true }],
 
     // enforce variables to be declared either together or separately in functions
     'one-var': ['error', 'never'],
@@ -230,7 +234,7 @@ module.exports = {
     'quote-props': ['error', 'consistent-as-needed'],
 
     // enforce the consistent use of either backticks, double, or single quotes
-    'quotes': ['error', 'single', {avoidEscape: true}],
+    'quotes': ['error', 'single', { avoidEscape: true }],
 
     // require JSDoc comments
     'require-jsdoc': 'off',

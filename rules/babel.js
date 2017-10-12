@@ -6,7 +6,7 @@ module.exports = {
   ],
   rules: {
     // require constructor names to begin with a capital letter (ignores decorators)
-    'babel/new-cap': ['error', {capIsNew: false, newIsCap: true}],
+    'babel/new-cap': ['error', { capIsNew: false, newIsCap: true }],
 
     // disallow this keywords outside of classes or class-like objects (includes class properties)
     'babel/no-invalid-this': 'error',

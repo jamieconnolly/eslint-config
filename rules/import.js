@@ -12,7 +12,7 @@ module.exports = {
     'import/export': 'error',
 
     // ensure consistent use of file extension within the import path
-    'import/extensions': ['error', {js: 'never', json: 'always'}],
+    'import/extensions': ['error', { js: 'never', json: 'always' }],
 
     // ensure all imports appear before other statements
     'import/first': ['error', 'absolute-first'],
